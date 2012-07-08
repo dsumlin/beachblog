@@ -563,7 +563,7 @@ conftest.c: In function ‘t’:
 conftest.c:5: warning: implicit declaration of function ‘rb_enc_alias’
 Undefined symbols for architecture x86_64:
   "_rb_enc_alias", referenced from:
-      _t in ccdl4Pdx.o
+      _t in ccJDkgwT.o
 ld: symbol(s) not found for architecture x86_64
 collect2: ld returned 1 exit status
 checked program was:

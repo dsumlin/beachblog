@@ -32,11 +32,11 @@ test:
   socket: /tmp/mysql.sock
 
 production:
-  adapter: mysql2
+  adapter: sqlite3
   encoding: utf8
   reconnect: false
   database: beachblog_pics
   pool: 5
   username: dsumlin
   password: Snakeeyes12  
-  socket: /tmp/mysql.sock
+  socket: /tmp/sqlite3.sock
