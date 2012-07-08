@@ -1,0 +1,27 @@
+<%= link_to("<< Back to List", {:action => 'list'}, :class => 'back-link') %>
+
+<div class="section new">
+	<h2>Show Section</h2>
+	
+		
+		<table Summary="Section form fields">
+				<tr>
+				<th>Page ID</th>
+				<td><%= @section.page_id %></td>
+				</tr>
+				<tr>
+				<th>Name</th>
+				<td><%= @section.name %></td>
+				</tr>
+		   		<tr>
+					<th>Position</th>
+					<td><%= @section.position %></td>
+				</tr>
+				<tr>
+					<th>Visible</th>
+					<td><%= @section.visible %></td>
+				</tr>
+		</table>
+		
+		
+		

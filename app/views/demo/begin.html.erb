@@ -1,0 +1,18 @@
+<h1>Beginings</h1>
+<p>Stuff</p>
+
+ID: <%= @id %><br />
+Next Page: <%= @page + 1 %><br />
+
+<% target = "Sumlin" %>
+<%= "Dennis #{target}" %><br />
+
+<% @array.each do |n| %>
+	<%= n %><br />
+<%end%>	
+
+<%= link_to("Beach Time", {:action => 'index'})%>
+
+<hr />
+
+<%= params.inspect %>

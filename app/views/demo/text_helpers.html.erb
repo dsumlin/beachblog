@@ -1,0 +1,43 @@
+<%
+text = "Please visit <http://www.dennissumlin.com \n You will find my resume and my other works\n\n Email me at webmaster@dennissumlin.com".html_safe
+%>
+
+<h2>word_wrap</h2>
+<%= word_wrap(text, :line_width => 30) %>
+<hr />
+
+<h2>simple_format</h2>
+<%= simple_format(text) %>
+<hr />
+
+<h2>simple_format + word_wrap</h2>
+<%= simple_format(word_wrap(text, :line_width => 30)) %>
+<hr />
+
+<h2>truncate</h2>
+<%= truncate(text, :length => 40, :omission => "...") %>
+<hr />
+
+<h2>excerpt</h2>
+<%= excerpt(text, 'dennissumlin.com', :radius => 7, :omission => "..." )%>
+<hr />
+
+<h2>highlight</h2>
+<%= highlight(text, 'dennis') %>
+<hr />
+<%= highlight(text, ['dennis', 'sumlin'], :highlighter => '<em>\1</em>') %>
+<hr />
+
+<h2>pluralize<h2>
+<%= "ox".pluralize %><br />
+<% (1..3).each do |n| %>
+	<%= pluralize(n, 'fish') %><br />
+	<%= pluralize(n, 'deer', 'deer') %><br />
+<% end %>	
+<hr />
+<h2>cycle</h2>
+<% 10.times do %>
+	<%= cycle('red', 'green', 'blue') %><br />
+<% end %>	
+	
+<hr />

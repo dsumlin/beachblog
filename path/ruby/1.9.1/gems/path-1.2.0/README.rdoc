@@ -1,0 +1,32 @@
+= Path
+
+* http://rubyworks.github.com/path
+
+
+== DESCRIPTION:
+
+Path is all about paths. It's provides a reimplementation of the Ruby
+standard Pathname library, Path::Name, a superior globbing
+facility, Path::List and an isolated shell-evironment, Path::Shell.
+
+
+== SYNOPSIS:
+
+Like Pathname:
+
+  require 'path/name'
+
+
+== INSTALLATION:
+
+Using RubyGems:
+
+  $ sudo gem install path
+
+
+== COPYRIGHT:
+
+Path, Copyright (c) 2009 Thomas Sawyer
+
+(LGPL License)
+
