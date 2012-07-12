@@ -45,3 +45,11 @@ a:hover {}
 
 /* Content */
 #content h2 { color: black; }
+
+.round {
+    -moz-border-radius:         10px;
+    -webkit-border-radius:      10px;
+    border-radius:              10px;
+
+}
+

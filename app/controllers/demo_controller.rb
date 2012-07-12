@@ -21,5 +21,9 @@ class DemoController < ApplicationController
   
   def text_helpers
     
-    end  
+    end
+  
+  def escape_output
+      
+  end    
 end
