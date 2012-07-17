@@ -21,15 +21,23 @@ a.action:hover { background: black; }
 /* small action buttons */
 .actions { width: 200px; }
 .actions a.action { float: left; min-width: 3.5em; 
-  padding: 1px 2px; margin: 2px 5px; font-size: 0.7em; }
+  padding: 1px 2px; margin: 2px 5px; font-size: 0.7em; 
+	-moz-border-radius:         10px;
+  -webkit-border-radius:      10px;
+  border-radius:              10px;
+}
 
 /* CRUD */
-.notice { height: 1.25em; padding: 0.5em; text-align: center;
-  background: #B6D491; color: black; }
+.notice {height: 1.25em; padding: 0.5em; text-align: center;
+  background: #B6D491; color: black; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;}
 .back-link { font-size: 0.8em; margin-bottom: 1em; }
-.form-buttons { text-align: center; margin: 1em 0; }
+.form-buttons { text-align: center; margin: 1em 0; 
+	-moz-border-radius:         10px;
+    -webkit-border-radius:      10px;
+    border-radius:              10px;
+	}
 
-.list table { clear: both; width: 100%; }
+.list table { clear: both; width: 100%;  }
 .list table tr td { border: 1px solid black; }
 .show table { clear: both; margin: 0 200px; width: 300px; }
 .show table.wide { width: 600px; margin: 0 50px; }
