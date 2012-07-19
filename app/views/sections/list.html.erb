@@ -1,14 +1,16 @@
 <% @page_title = "Sections List" %>
 
+<%= link_to("<< Back to Pages List", {:controller => 'pages', :action => 'list'}, :class => 'back-link') %>
+
 
 <div class="section list">
-<%= link_to("Add New Section", {:action => 'new'}, :class => 'action new') %>
+<%= link_to("Add New Section", {:action => 'new', :page_id => @page.id}, :class => 'action new') %>
 	
 	<h2>Sections</h2>
 	
 <div><%= pluralize(@sections.size, 'section') %> found</div>
 	
-	<table class="listing" summary="Section list">
+	<table class="listing" Summary="Section list">
 		<tr class="header">
 			<th>&nbsp;</th>
 			<th>Section</th>
@@ -23,9 +25,9 @@
 			<td class="center"><%= status_tag(section.visible) %></td>
 			<td class="center"><%= section.content_type %></td>
 			<td class="actions">
-				<%= link_to("Show", {:action => 'show', :id => section.id}, :class => 'action_show') %>
-				<%= link_to("Edit", {:action => 'edit', :id => section.id}, :class => 'action edit') %>
-				<%= link_to("Delete", {:action => 'delete', :id => section.id}, :class => 'action delete') %>
+				<%= link_to("Show", {:action => 'show', :id => section.id, :page_id => @page.id}, :class => 'action_show') %>
+				<%= link_to("Edit", {:action => 'edit', :id => section.id, :page_id => @page.id}, :class => 'action edit') %>
+				<%= link_to("Delete", {:action => 'delete', :id => section.id, :page_id => @page.id}, :class => 'action delete') %>
 				</td>
 			</tr>
 			<% end %>

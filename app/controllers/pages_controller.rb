@@ -11,7 +11,7 @@ class PagesController < ApplicationController
    end
 
    def list
-     @pages = Page.order("pages.position ASC").where(subject_id => @subject.id)
+     @pages = Page.order("pages.position ASC").where(:subject_id => @subject.id)
    end
    
 
@@ -21,8 +21,8 @@ class PagesController < ApplicationController
 
     def new
       @page = Page.new(:subject_id => @subject.id)
-      @page_count = Page.count + 1
-      @subjects = Subject.order('position ASC')
+      @page_count = @subject.pages.size + 1
+      @subject_count = Subject.count  
     end
 
     def create
@@ -31,8 +31,8 @@ class PagesController < ApplicationController
         flash[:notice] = "Page Created."
         redirect_to(:action => 'list', :subject_id => @page.subject_id)
       else
-        @page_count = Page.count + 1
-        @subjects = Subject.order('position ASC')
+        @page_count = @subject.pages.size + 1
+        @subject_count = Subject.order('position ASC')  
         render('new')
       end
     end
@@ -41,8 +41,8 @@ class PagesController < ApplicationController
 
    def edit
      @page = Page.find(params[:id])
-     @page_count = Page.count
-     @subjects = Subject.order('position ASC')  
+     @page_count = @subject.pages.size
+     @subject_count = Subject.order('position ASC')  
    end
 
    def update
@@ -55,8 +55,8 @@ class PagesController < ApplicationController
         redirect_to(:action => 'show', :id => @page.id, :subject_id => @page.subject_id)
       #if save fails...   
       else
-        @page_count = Page.count
-        @subjects = Subject.order('position ASC')  
+        @page_count = @subject.pages.size 
+        @subject_count = Subject.order('position ASC')  
         render('edit')
      end
    end
@@ -76,6 +76,8 @@ class PagesController < ApplicationController
  def find_subject
     if params[:subject_id]
       @subject = Subject.find_by_id(params[:subject_id])
+    end
   end
+  
   
 end
