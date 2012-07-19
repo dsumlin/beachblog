@@ -11,7 +11,8 @@ class PagesController < ApplicationController
    end
 
    def list
-     @pages = Page.order("pages.position ASC").where(:subject_id => @subject.id)
+     @pages = Page.sorted.where(:subject_id => @subject.id)
+     
    end
    
 
@@ -41,7 +42,7 @@ class PagesController < ApplicationController
 
    def edit
      @page = Page.find(params[:id])
-     @page_count = @subject.pages.size
+     @page_count = @subject.pages.size 
      @subject_count = Subject.order('position ASC')  
    end
 
@@ -55,7 +56,7 @@ class PagesController < ApplicationController
         redirect_to(:action => 'show', :id => @page.id, :subject_id => @page.subject_id)
       #if save fails...   
       else
-        @page_count = @subject.pages.size 
+        @page_count = @subject.pages.size
         @subject_count = Subject.order('position ASC')  
         render('edit')
      end

@@ -12,7 +12,7 @@ class SectionsController < ApplicationController
    end
 
    def list
-     @sections = Section.order("sections.position ASC").where(:page_id => @page.id)
+     @sections = Section.sorted.where(:page_id => @page.id)
     end
 
     def show 
@@ -21,7 +21,8 @@ class SectionsController < ApplicationController
 
     def new
       @section = Section.new(:page_id => @page.id)
-      @page_count = Page.count + 1
+      @section_count = @page.sections.size + 1
+      @pages = Page.order('position ASC')
       
     end
 
@@ -34,14 +35,17 @@ class SectionsController < ApplicationController
         redirect_to(:action => 'list', :page_id => @section.page_id)
       #if save fails   
       else
-        @page_count = Page.count + 1 
+        @section_count = @page.sections.size + 1
+        @pages = Page.order('position ASC')
+        
         render('new')
      end   
   end
 
    def edit
      @section = Section.find(params[:id])
-     @page_count = Page.count
+     @section_count = @page.sections.size 
+     @pages = Page.order('position ASC')
      
    end
 
@@ -55,7 +59,8 @@ class SectionsController < ApplicationController
         redirect_to(:action => 'show', :id => @section.id, :page_id => @section.page_id)
       #if save fails...   
       else
-        @page_count = Page.count + 1
+        @section_count = @page.sections.size 
+        @pages = Page.order('position ASC')
         render('edit')
      end
    end

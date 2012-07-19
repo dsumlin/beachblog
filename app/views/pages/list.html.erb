@@ -26,9 +26,9 @@
 			<td class="center"><%= page.sections.size %></td>
 			<td class="actions">
 				
-					<%= link_to("View Sections", {:controller => 'sections', :action => 'list', :page_id => page.id}, 
+			<%= link_to("View Sections", {:controller => 'sections', :action => 'list', :page_id => page.id}, 
 					:class => 'action show') %>
-					<%= link_to("Show", {:action => 'show', :id => page.id}, :class => 'action show') %>
+			<%= link_to("Show", {:action => 'show', :id => page.id, :page_id => page.id}, :class => 'action show') %>
 				
 				<%= link_to("Show", {:action => 'show', :id => page.id, :subject_id => @subject.id}, :class => 'action_show') %>
 				<%= link_to("Edit", {:action => 'edit', :id => page.id, :subject_id => @subject.id}, :class => 'action edit') %>
