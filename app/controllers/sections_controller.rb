@@ -23,8 +23,8 @@ class SectionsController < ApplicationController
       @section = Section.new(:page_id => @page.id)
       @section_count = @page.sections.size + 1
       @pages = Page.order('position ASC')
-      
-    end
+      @page_count = Page.count  
+     end
 
     def create
       new_position = params[:section].delete(:position)
@@ -39,6 +39,7 @@ class SectionsController < ApplicationController
       else
         @section_count = @page.sections.size + 1
         @pages = Page.order('position ASC')
+        @page_count = Page.count
         
         render('new')
      end   
@@ -48,8 +49,8 @@ class SectionsController < ApplicationController
      @section = Section.find(params[:id])
      @section_count = @page.sections.size 
      @pages = Page.order('position ASC')
-     
-   end
+     @page_count = Page.count  
+    end
 
    def update
      #find object form parameters
@@ -65,6 +66,8 @@ class SectionsController < ApplicationController
       else
         @section_count = @page.sections.size 
         @pages = Page.order('position ASC')
+        @page_count = Page.count  
+        
         render('edit')
      end
    end
