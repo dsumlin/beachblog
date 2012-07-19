@@ -23,15 +23,17 @@ class SubjectsController < ApplicationController
    end
    
    def create
+     new_position = params[:subject].delete(:position)
      #instantiate a new object form parameters
      @subject = Subject.new(params[:subject])
      #Save the object
      if @subject.save
+       @subject.move_to_position(new_position)
        flash[:notice] = "Subject Created!"
        redirect_to(:action => 'list')  
      else
         #if save fails 
-        @subject_count = Subject.count  
+        @subject_count = Subject.count + 1
        render('new')
     end   
  end
@@ -46,10 +48,11 @@ class SubjectsController < ApplicationController
     #find object form parameters
     @subject = Subject.find(params[:id])
      #update the object
+     new_position = params[:subject].delete(:position)
      if @subject.update_attributes(params[:subject])
        #if update is a success...
-       flash[:notice] = "Subject Updated!"
-       
+       @subject.move_to_position(new_position)
+       flash[:notice] = "Subject Updated!"     
        redirect_to(:action => 'show', :id => @subject.id)
      else
        #if save fails... 
@@ -63,7 +66,9 @@ class SubjectsController < ApplicationController
   end 
    
   def destroy
-   Subject.find(params[:id]).destroy
+   subject = Subject.find(params[:id])
+   subject.move_to_position(nil)
+   subject.destroy
    flash[:notice] = "Subject Bye Bye!"
     redirect_to(:action => 'list')
   end  
