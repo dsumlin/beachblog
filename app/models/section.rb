@@ -1,4 +1,4 @@
-require 'lib/position_mover'
+require 'position_mover'
 
 class Section < ActiveRecord::Base
   # attr_accessible :title, :body
