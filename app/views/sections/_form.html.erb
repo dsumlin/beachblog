@@ -3,7 +3,7 @@
 <table Summary="Section form fields">
 		<tr>
 		<th>Page</th>
-		<td><%= f.select(:page_id, 1..@page_count) %></td>
+		<td><%= f.select(:page_id, 1..@pages) %></td>
 		</tr>
 		<tr>
 		<th>Name</th>
@@ -11,7 +11,7 @@
 		</tr>
    		<tr>
 			<th>Position</th>
-			<td><%= f.select(:position, 1..@section_count) %></td>
+			<td><%= f.text_field(:position) %></td>
 		</tr>
 		<tr>
 			<th>Visible</th>

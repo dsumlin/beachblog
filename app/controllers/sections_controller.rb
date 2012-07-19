@@ -23,8 +23,6 @@ class SectionsController < ApplicationController
       @section = Section.new(:page_id => @page.id)
       @section_count = @page.sections.size + 1
       @pages = Page.order('position ASC')
-      @page_count = Page.count  
-      
       
     end
 
