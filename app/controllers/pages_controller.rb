@@ -24,6 +24,8 @@ class PagesController < ApplicationController
       @page = Page.new(:subject_id => @subject.id)
       @page_count = @subject.pages.size + 1
       @subject_count = Subject.count  
+      @subjects = Subject.order('position ASC')
+      
     end
 
     def create
@@ -35,8 +37,9 @@ class PagesController < ApplicationController
         redirect_to(:action => 'list', :subject_id => @page.subject_id)
       else
         @page_count = @subject.pages.size + 1
-        @subject_count = Subject.order('position ASC')  
-        render('new')
+        @subject_count = Subject.order('position ASC') 
+        @subjects = Subject.order('position ASC')
+       render('new')
       end
     end
     
@@ -45,7 +48,9 @@ class PagesController < ApplicationController
    def edit
      @page = Page.find(params[:id])
      @page_count = @subject.pages.size 
-     @subject_count = Subject.order('position ASC')  
+     @subject_count = Subject.order('position ASC')
+     @subjects = Subject.order('position ASC')
+       
    end
 
    def update
@@ -61,7 +66,8 @@ class PagesController < ApplicationController
       #if save fails...   
       else
         @page_count = @subject.pages.size
-        @subject_count = Subject.order('position ASC')  
+        @subject_count = Subject.order('position ASC') 
+        @subjects = Subject.order('position ASC')     
         render('edit')
      end
    end

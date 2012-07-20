@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="eng">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>BeachBlog | <%="| #{@page_title}" if @page_title %></title>
+		<meta name="author" content="Dennis Sumlin">
+		<%= stylesheet_link_tag('public', 'admin', :media => 'all') %>
+		<%= javascript_include_tag('application') %>
+	</head>
+  <body>
+	<div class="round" id="header">
+			<h1>My BeachBlog</h1>
+				<%= yield %>
+		</div>
+		<div class="round" id="main">
+				<%= yield %>
+			<div id="navigation">
+					<%= yield %>
+				</div>
+		</div>		
+		<div class="round" id="content">
+			<%= yield %>
+		</div>
+		<div class="clear">		<%= yield %>	
+	</div>
+	<div class="round" id="footer">
+		<p id="copyright">&copy; dennissumlin.com | Dennis Sumlin </p>
+	</div>
+   </body>
+</html>
