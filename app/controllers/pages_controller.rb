@@ -48,7 +48,7 @@ class PagesController < ApplicationController
    def edit
      @page = Page.find(params[:id])
      @page_count = @subject.pages.size 
-     @subject_count = Subject.order('position ASC')
+     @subject_count = Subject.count
      @subjects = Subject.order('position ASC')
        
    end

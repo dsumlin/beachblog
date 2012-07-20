@@ -5,7 +5,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>BeachBlog | <%="| #{@page_title}" if @page_title %></title>
 		<meta name="author" content="Dennis Sumlin">
-		<%= stylesheet_link_tag('public', 'admin', :media => 'all') %>
+		<%= stylesheet_link_tag('public') %>
 		<%= javascript_include_tag('application') %>
 	</head>
   <body>
@@ -16,7 +16,7 @@
 		<div class="round" id="main">
 				<%= yield %>
 			<div id="navigation">
-					<%= yield %>
+				<%= render(:partial => 'layouts/navigation', :locals => {:subjects => @subjects}) %>
 				</div>
 		</div>		
 		<div class="round" id="content">
