@@ -21,8 +21,11 @@
 					<th>Visible</th>
 					<td><%= @section.visible %></td>
 				</tr>
-				<%= image_tag('rails.png', :size => '50x64', :alt => "Rails logo") %>
-				<%= image_tag @section.avatar.url %>
+				<tr>
+				
+			<td><caption><%= @section.name %></caption><%= image_tag @section.avatar.url %></td>
+				</tr>
+			
 			
 		</table>
 		

@@ -1,6 +1,15 @@
 /* Admin stylesheet       */
 /* loads after public.css */
 
+
+img {
+
+padding 1em;
+background: silver;
+width: 560px;
+height: 300px;
+}
+
 /* Structure */
 #content { padding-left: 100px; padding-right: 100px; }
 #content h2 { width: 760px; text-align: center; }
