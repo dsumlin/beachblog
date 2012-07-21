@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120705055133) do
+ActiveRecord::Schema.define(:version => 20120721044413) do
 
   create_table "admin_users", :force => true do |t|
     t.string   "first_name",      :limit => 25
@@ -64,11 +64,15 @@ ActiveRecord::Schema.define(:version => 20120705055133) do
     t.integer  "page_id"
     t.string   "name"
     t.integer  "position"
-    t.boolean  "visible",      :default => false
+    t.boolean  "visible",             :default => false
     t.string   "content_type"
     t.text     "content"
-    t.datetime "created_at",                      :null => false
-    t.datetime "updated_at",                      :null => false
+    t.datetime "created_at",                             :null => false
+    t.datetime "updated_at",                             :null => false
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
   end
 
   add_index "sections", ["page_id"], :name => "index_sections_on_page_id"

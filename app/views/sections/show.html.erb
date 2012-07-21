@@ -22,7 +22,9 @@
 					<td><%= @section.visible %></td>
 				</tr>
 				<%= image_tag('rails.png', :size => '50x64', :alt => "Rails logo") %>
-				
+				<%= image_tag @user.avatar.url %>
+				<%= image_tag @user.avatar.url(:medium) %>
+				<%= image_tag @user.avatar.url(:thumb) %>
 		</table>
 		
 		

@@ -8,7 +8,7 @@ gem 'blueprint-rails'
 #gem 'sqlite3', :group => [:production]
 gem 'mysql2'
 gem 'pg'
-
+gem 'paperclip'
 
 # Gems used only for assets and not required
 # in production environments by default.
