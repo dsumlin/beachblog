@@ -7,7 +7,7 @@ gem 'blueprint-rails'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 #gem 'sqlite3', :group => [:production]
 gem 'mysql2'
-#gem 'pg'
+gem 'pg'
 
 
 # Gems used only for assets and not required
