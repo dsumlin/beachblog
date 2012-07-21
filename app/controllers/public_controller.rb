@@ -1,9 +1,9 @@
 class PublicController < ApplicationController
   layout 'public'
- # before_filter :setup_navigation
+  before_filter :setup_navigation
   
   def index
-    
+    #placeholder text
   end
 
   def show

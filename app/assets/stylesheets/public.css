@@ -18,7 +18,7 @@ img { border: none; }
 table { border-collapse: collapse; }
 table tr th, table tr td { vertical-align: top; text-align: left; 
   padding: 3px; }
-a, a:visited { color: #993120; }
+a, a:visited { color: purple; }
 a:hover {}
 
 .clear { clear: both; }
@@ -30,10 +30,10 @@ a:hover {}
 #header h1 { margin: 0; padding: 0; }
 #main { min-height: 500px; background: white; }
 #navigation { float: left; width: 180px; min-height: 480px; padding: 10px; 
-  background: #94B26F; color: black; }
-#content { float: left; padding: 10px; }
-#footer { clear: both; height: 2.5em; text-align: right;
-  background: blue; color: #F2DC87; }
+  background: black; color: white;}
+#content { float: left; padding: 10px; text-align: center;}
+#footer { clear: both; height: 2.5em; text-align: center;
+  background: blue; color: white; }
 #footer p { margin: 0; padding: 0.5em 1em; }
 
 /* Navigation */
@@ -41,7 +41,7 @@ a:hover {}
 #navigation ul li { margin-bottom: 0.5em; }
 #navigation ul ul { margin: 0.5em 0 0 1em; font-size: 0.9em; }
 #navigation a { text-decoration: none; padding: 1px 3px;}
-#navigation a:hover { background: #F2DC87; }
+#navigation a:hover { background: green; }
 
 /* Content */
 #content h2 { color: black; }

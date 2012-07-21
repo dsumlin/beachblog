@@ -8,22 +8,20 @@
 		<%= stylesheet_link_tag('public') %>
 		<%= javascript_include_tag('application') %>
 	</head>
-  <body>
+  <body class="round">
 	<div class="round" id="header">
 			<h1>My BeachBlog</h1>
-				<%= yield %>
-		</div>
+	</div>
 		<div class="round" id="main">
-				<%= yield %>
-			<div id="navigation">
+			<div class="round" id="navigation">
 				<%= render(:partial => 'layouts/navigation', :locals => {:subjects => @subjects}) %>
+			</div>
+				<div class="round" id="content">
+					<%= yield %>			
 				</div>
 		</div>		
-		<div class="round" id="content">
-			<%= yield %>
-		</div>
-		<div class="clear">		<%= yield %>	
-	</div>
+	
+		<div class="clear"></div>			
 	<div class="round" id="footer">
 		<p id="copyright">&copy; dennissumlin.com | Dennis Sumlin </p>
 	</div>
