@@ -9,6 +9,7 @@ gem 'blueprint-rails'
 gem 'mysql2'
 gem 'pg'
 gem 'paperclip'
+#gem 'rmagick'
 
 # Gems used only for assets and not required
 # in production environments by default.

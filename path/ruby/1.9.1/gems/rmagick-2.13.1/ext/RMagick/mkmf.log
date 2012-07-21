@@ -1,0 +1,67 @@
+checking for Ruby version >= 1.8.5... -------------------- yes
+
+--------------------
+
+find_executable: checking for /usr/bin/gcc-4.2... -------------------- yes
+
+--------------------
+
+find_executable: checking for Magick-config... -------------------- yes
+
+--------------------
+
+checking for ImageMagick version >= 6.4.9... -------------------- yes
+
+--------------------
+
+checking for HDRI disabled version of ImageMagick... -------------------- yes
+
+--------------------
+
+have_header: checking for stdint.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I/Volumes/dsumlin/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin12.0.0 -I/Volumes/dsumlin/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Volumes/dsumlin/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I.     conftest.c  -L. -L/Volumes/dsumlin/.rvm/rubies/ruby-1.9.3-p194/lib -L/Volumes/dsumlin/.rvm/usr/lib        -lruby.1.9.1  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main() {return 0;}
+/* end */
+
+"/usr/bin/gcc-4.2 -E -I/Volumes/dsumlin/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin12.0.0 -I/Volumes/dsumlin/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Volumes/dsumlin/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I.      conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <stdint.h>
+/* end */
+
+--------------------
+
+have_header: checking for sys/types.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -E -I/Volumes/dsumlin/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin12.0.0 -I/Volumes/dsumlin/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Volumes/dsumlin/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I.      conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sys/types.h>
+/* end */
+
+--------------------
+
+have_header: checking for wand/MagickWand.h... -------------------- no
+
+"/usr/bin/gcc-4.2 -E -I/Volumes/dsumlin/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin12.0.0 -I/Volumes/dsumlin/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Volumes/dsumlin/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I.      conftest.c -o conftest.i"
+conftest.c:3:29: error: wand/MagickWand.h: No such file or directory
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <wand/MagickWand.h>
+/* end */
+
+--------------------
+
+
+Can't install RMagick 2.13.1. Can't find MagickWand.h.

@@ -1,0 +1,32 @@
+/Volumes/dsumlin/.rvm/rubies/ruby-1.9.3-p194/bin/ruby extconf.rb 
+checking for Ruby version >= 1.8.5... yes
+extconf.rb:128: Use RbConfig instead of obsolete and deprecated Config.
+checking for /usr/bin/gcc-4.2... yes
+checking for Magick-config... yes
+checking for ImageMagick version >= 6.4.9... yes
+checking for HDRI disabled version of ImageMagick... yes
+/usr/local/bin/Magick-config: line 41: pkg-config: command not found
+/usr/local/bin/Magick-config: line 47: pkg-config: command not found
+/usr/local/bin/Magick-config: line 50: pkg-config: command not found
+/usr/local/bin/Magick-config: line 53: pkg-config: command not found
+checking for stdint.h... yes
+checking for sys/types.h... yes
+checking for wand/MagickWand.h... no
+
+Can't install RMagick 2.13.1. Can't find MagickWand.h.
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of
+necessary libraries and/or headers.  Check the mkmf.log file for more
+details.  You may need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/Volumes/dsumlin/.rvm/rubies/ruby-1.9.3-p194/bin/ruby
