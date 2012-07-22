@@ -8,6 +8,10 @@ padding 1em;
 background: silver;
 width: 560px;
 height: 300px;
+-moz-border-radius:         10px;
+-webkit-border-radius:      10px;
+border-radius:              10px;
+
 }
 
 /* Structure */
@@ -15,9 +19,22 @@ height: 300px;
 #content h2 { width: 760px; text-align: center; }
 
 .login form { margin: 100px 250px; }
-.menu .identity { text-align: center; }
-.menu ul { margin: 3em 250px; list-style: none; }
+.menu .identity { text-align: center; background: blue; background-image: url(bg2.png); color:white;
+	-moz-border-radius:         10px;
+    -webkit-border-radius:      10px;
+    border-radius:              10px;
+	
+	
+	 }
+.menu ul { margin: 3em 250px; list-style: none;}
 .menu ul li { margin-bottom: 1em; }
+.menu a {color: white;
+	background: blue; 
+	-moz-border-radius:         10px;
+    -webkit-border-radius:      10px;
+    border-radius:              10px;
+	padding: 1em;
+	}
 
 a { text-decoration: none; }
 a:hover { text-decoration: underline; color:black}
@@ -63,6 +80,16 @@ span.status {display: block; width: 10px; height: 10px;
 	margin: 0.25em auto; padding: 0; border: 1px solid #000000; }
 span.status.true {background: green; color: green; }
 span.status.false {background: red; color: red; }
+
+.round {
+    -moz-border-radius:         10px;
+    -webkit-border-radius:      10px;
+    border-radius:              10px;
+
+}	
+	
+	
+	
 	
 /* Errors */
 .fieldWithErrors { display: table; padding: 2px; background-color: #AA0000; }
