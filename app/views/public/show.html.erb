@@ -5,7 +5,16 @@
 		<% case section.content_type when 'HTML' %>
 			<%= raw(sanitize(section.content, :tags => ['strong', 'em', 'a'])) %>
 		<% when 'text' %>
-			<p><%= section.content %></p>
+			<p><%= section.content %>
+				<%= image_tag('rails.png', :size => '50x64', :alt => "Rails logo") %>
+				<%= image_tag(@avatar) %>
+				
+				<%= render(:partial => "display") %>
+				
+			</p>
+			
 		<% end %>
+					
 		</div>
-<% end %>			
+<% end %>	
+		

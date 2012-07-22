@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120721044413) do
+ActiveRecord::Schema.define(:version => 20120721234734) do
 
   create_table "admin_users", :force => true do |t|
     t.string   "first_name",      :limit => 25
@@ -49,6 +49,16 @@ ActiveRecord::Schema.define(:version => 20120721044413) do
 
   add_index "pages", ["permalink"], :name => "index_pages_on_permalink"
   add_index "pages", ["subject_id"], :name => "index_pages_on_subject_id"
+
+  create_table "publics", :force => true do |t|
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
+    t.integer  "avatar_id"
+  end
 
   create_table "section_edits", :force => true do |t|
     t.integer  "admin_user_id"
