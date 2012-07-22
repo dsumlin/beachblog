@@ -9,6 +9,7 @@ dark brown:   #332318
 light brown:  #4C2516
 */
 
+
 html { height: 100%; width: 100%; }
 body { width: 100%; min-width: 980px; height: 100%; margin: 0; padding: 0; 
   font: 14px Verdana,Lucida,Arial,Helvetica,sans-serif; color: black; }
@@ -26,14 +27,14 @@ a:hover {}
 
 /* Structure */
 #header { height: 4em; padding-top: 1em; text-align: center; 
-  background: blue; color: #FFFFFF; }
+  background: blue; color: white; background-image: url(bg1.png);}
 #header h1 { margin: 0; padding: 0; }
 #main { min-height: 500px; background: white; }
 #navigation { float: left; width: 180px; min-height: 480px; padding: 10px; 
-  background: black; color: white;}
+  background: black; color: white; background-image: url(bg1.png)}
 #content { float: left; padding: 10px; text-align: center;}
 #footer { clear: both; height: 2.5em; text-align: center;
-  background: blue; color: white; }
+  background: blue; color: white; background-image: url(bg1.png) }
 #footer p { margin: 0; padding: 0.5em 1em; }
 
 /* Navigation */
