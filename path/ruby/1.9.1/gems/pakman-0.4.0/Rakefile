@@ -1,0 +1,24 @@
+require 'hoe'
+require './lib/pakman/version.rb'
+
+Hoe.spec 'pakman' do
+  
+  self.version = Pakman::VERSION
+  
+  self.summary = 'pakman - Template Pack Manager'
+  self.description = summary
+  
+  self.urls    = ['http://geraldb.github.com/pakman']
+  
+  self.author  = 'Gerald Bauer'
+  self.email   = 'webslideshow@googlegroups.com'
+  
+  self.extra_deps = [
+    ['fetcher','>= 0.1.0']
+  ]
+    
+  # switch extension to .rdoc for gihub formatting
+  self.readme_file  = 'README.markdown'
+  self.history_file = 'History.markdown'
+
+end

@@ -10,6 +10,7 @@ gem 'mysql2'
 gem 'pg'
 gem 'paperclip'
 #gem 'rmagick'
+gem 'slideshow'
 
 # Gems used only for assets and not required
 # in production environments by default.
