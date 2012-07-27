@@ -1,6 +1,6 @@
 class AccessController < ApplicationController
   
-  layout 'admin'
+  layout 'public'
   
   before_filter :confirm_logged_in, :except => [:login, :attempt_login, :logout]
   
@@ -9,8 +9,14 @@ class AccessController < ApplicationController
     render ('menu')
   end
   
+  def show
+    @page = Page.where(:permalink => params[:id], :visible => true).first
+      redirect_to(:action => 'index') unless @page
+  end
+  
   
   def menu
+    @subjects = Subject.order("subjects.position ASC")
     
   end
 

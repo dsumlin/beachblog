@@ -9,7 +9,7 @@ class Section < ActiveRecord::Base
   has_many :editors, :through => :section_edits, :class_name => "AdminUser"
   attr_accessible :avatar, :page_id, :name, :visible, :content_type, :content
   has_attached_file :avatar
-  CONTENT_TYPES = ['text', 'HTML']
+  CONTENT_TYPES = ['text', 'HTML', 'avatar']
   
   validates_presence_of :name
   validates_length_of :name, :maximum => 255

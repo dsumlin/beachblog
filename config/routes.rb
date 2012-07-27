@@ -2,7 +2,7 @@ Beachblog::Application.routes.draw do
   
 
 
-  root :to => "public#index"
+  root :to => "access#menu"
   
   match 'admin', :to => 'access#menu'
   match 'show/:id', :to => 'public#show'

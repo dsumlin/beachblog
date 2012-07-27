@@ -1,3 +1,7 @@
+<%= link_to("<< Back to Menu", {:controller => 'access', :action => 'menu'}, :class => 'back-link') %>
+
+
+
 <h2><%= @page.name%></h2>
 
 <% @page.sections.visible.sorted.each do |section| %>
@@ -5,12 +9,10 @@
 		<% case section.content_type when 'HTML' %>
 			<%= raw(sanitize(section.content, :tags => ['strong', 'em', 'a'])) %>
 		<% when 'text' %>
-			<p><%= section.content %>
-				<%= image_tag('rails.png', :size => '50x64', :alt => "Rails logo") %>
-				<%= image_tag(@avatar) %>
-				
-				
-			</p>
+			<p><%= section.content  %>
+		<% when 'avatar' %>
+		<%= image_tag section.avatar.url %>
+		</p>
 			
 		<% end %>
 					

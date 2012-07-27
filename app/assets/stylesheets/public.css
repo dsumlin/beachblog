@@ -53,4 +53,15 @@ a:hover {}
     border-radius:              10px;
 
 }
+img {
+
+padding 1em;
+background: silver;
+width: 560px;
+height: 300px;
+-moz-border-radius:         10px;
+-webkit-border-radius:      10px;
+border-radius:              10px;
+
+}
 
