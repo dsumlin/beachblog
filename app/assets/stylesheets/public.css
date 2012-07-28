@@ -28,10 +28,12 @@ a:hover {}
 /* Structure */
 #header { height: 4em; padding-top: 1em; text-align: center; color: white; background-image: url(bg6.jpg)}
 #header h1 { margin: 0; padding: 0; }
-#main { min-height: 500px; background: white; }
+#main { min-height: 500px; background: white; border: 1px groove black}
 #navigation { float: left; width: 180px; min-height: 480px; padding: 10px; 
   background: blue; color: white; background-image: url(bg7.jpg)}
-#content { float: left; padding: 10px; text-align: center;}
+#navigation_2 { float: right; width: 180px; min-height: 480px; padding: 10px; 
+  background: blue; color: white; background-image: url(bg7.jpg)}
+#content { float: left; padding: 10px; text-align: center; border: 1px groove black}
 #footer { clear: both; height: 2.5em; text-align: center; color: white; background-image: url(footer.jpg) }
 #footer p { margin: 0; padding: 0.5em 1em; }
 
@@ -64,3 +66,20 @@ border-radius:              10px;
 
 }
 
+.login form { margin: 100px 250px; }
+.menu .identity { text-align: center; background-image: url(footer.jpg); color:white;
+	-moz-border-radius:         10px;
+    -webkit-border-radius:      10px;
+    border-radius:              10px;
+	
+	
+	 }
+	.menu ul { margin: 3em 250px; list-style: none;}
+	.menu ul li { margin-bottom: 1em; }
+	.menu a {color: white;
+		background-image: url(footer.jpg);
+		-moz-border-radius:         10px;
+	    -webkit-border-radius:      10px;
+	    border-radius:              10px;
+		padding: 1em;
+		}
