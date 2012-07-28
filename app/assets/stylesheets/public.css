@@ -26,14 +26,13 @@ a:hover {}
 .center { text-align: center; }
 
 /* Structure */
-#header { height: 4em; padding-top: 1em; text-align: center; color: white; background-image: url(bg3.jpg);}
+#header { height: 4em; padding-top: 1em; text-align: center; color: white; background-image: url(bg6.jpg)}
 #header h1 { margin: 0; padding: 0; }
 #main { min-height: 500px; background: white; }
 #navigation { float: left; width: 180px; min-height: 480px; padding: 10px; 
-  background: blue; color: white; background-image: url(bg2.png)}
+  background: blue; color: white; background-image: url(bg7.jpg)}
 #content { float: left; padding: 10px; text-align: center;}
-#footer { clear: both; height: 2.5em; text-align: center;
-  background: blue; color: white; background-image: url(bg2.png) }
+#footer { clear: both; height: 2.5em; text-align: center; color: white; background-image: url(footer.jpg) }
 #footer p { margin: 0; padding: 0.5em 1em; }
 
 /* Navigation */
