@@ -64,14 +64,14 @@ a.action:hover { background: black; }
 	}
 
 .list table { clear: both; width: 100%;  }
-.list table tr td { border: 1px solid black; }
+.list table tr td { border: 1px solid white; }
 .show table { clear: both; margin: 0 200px; width: 300px; }
 .show table.wide { width: 600px; margin: 0 50px; }
 .show table tr th { white-space: nowrap; padding-right: 5px;}
 .show table tr td { border: 1px solid black; }
 .edit table, .new table { margin: 0 auto; }
 
-.odd { background: blue; color:white; }
+.odd { background: black; color:white; }
 .even { background: none; }
 
 .section + .section { padding-top: 0.5em; margin-top: 0.5em; 
