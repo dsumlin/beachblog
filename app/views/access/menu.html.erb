@@ -1,7 +1,6 @@
 <% @page_title = "Admin Menu" %>
 
 <div class="menu">
-	<h2>Home</h2>
 	<div class="identity">You are: <%= session[:username]%></div>
 	<ul>
 		<li><%= link_to("Manage Content", :controller => 'subjects') %></li>
