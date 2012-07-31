@@ -8,7 +8,7 @@ class Section < ActiveRecord::Base
   has_many :section_edits
   has_many :editors, :through => :section_edits, :class_name => "AdminUser"
   attr_accessible :avatar, :page_id, :name, :visible, :content_type, :content
-  has_attached_file :avatar, :storage => :s3,
+  has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :storage => :s3,
     :s3_credentials => {
       :bucket            => ENV['StarScream'],
       :access_key_id     => ENV['AWS_ACCESS_KEY_ID'],
