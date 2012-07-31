@@ -45,16 +45,7 @@ a:hover {}
 
 }
 
-img {
 
-padding: 1em;
-width: 299px;
-height: 170px;
--moz-border-radius:         10px;
--webkit-border-radius:      10px;
-border-radius:              10px;
-
-}
 
 .menu .identity { text-align: center; background-image: url(footer.jpg); color:white;
 	-moz-border-radius:         10px;
