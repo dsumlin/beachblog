@@ -11,7 +11,7 @@ class Section < ActiveRecord::Base
   has_attached_file :avatar,
   :storage => :s3,
     :s3_credentials => {
-      :bucket            => ENV['S3_BUCKET_NAME'],
+      :bucket            => ENV['StarScream'],
       :access_key_id     => ENV['AWS_ACCESS_KEY_ID'],
       :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
   CONTENT_TYPES = ['text', 'HTML', 'avatar']
