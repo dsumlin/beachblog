@@ -11,7 +11,7 @@
 		<% when 'text' %>
 			<p><%= section.content  %>
 		<% when 'avatar' %>
-		<%= image_tag section.avatar.url %>
+		<%= image_tag section.avatar.url(:thumb) %>
 		</p>
 			
 		<% end %>

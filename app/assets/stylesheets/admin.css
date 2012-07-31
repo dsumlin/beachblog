@@ -2,17 +2,7 @@
 /* loads after public.css */
 
 
-img {
 
-padding: 1em;
-background: silver;
-width: 560px;
-height: 300px;
--moz-border-radius:         10px;
--webkit-border-radius:      10px;
-border-radius:              10px;
-
-}
 
 /* Structure */
 #content { padding-left: 100px; padding-right: 100px; }
