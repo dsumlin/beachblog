@@ -9,22 +9,7 @@
 #content h2 { width: 760px; text-align: center; }
 
 .login form { margin: 100px 250px; }
-.menu .identity { text-align: center; background: blue; background-image: url(bg2.png); color:white;
-	-moz-border-radius:         10px;
-    -webkit-border-radius:      10px;
-    border-radius:              10px;
-	
-	
-	 }
-.menu ul { margin: 3em 250px; list-style: none;}
-.menu ul li { margin-bottom: 1em; }
-.menu a {color: white;
-	background: blue; 
-	-moz-border-radius:         10px;
-    -webkit-border-radius:      10px;
-    border-radius:              10px;
-	padding: 1em;
-	}
+
 
 a { text-decoration: none; }
 a:hover { text-decoration: underline; color:black}

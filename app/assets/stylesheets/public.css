@@ -51,7 +51,20 @@ a:hover {}
 	-moz-border-radius:         10px;
     -webkit-border-radius:      10px;
     border-radius:              10px;
-	
+	padding: 10px;
+	padding-left: 150px;
+	padding-right: 150px;
+	margin-left: 100px;
 	
 	 }
+	 
+	 
+ .menu ul {margin-left: 35px;list-style: none;}
+.menu ul li { margin-bottom: 1em; }
+.menu a {background-image: url(footer.jpg); color:white; 
+			-moz-border-radius:         10px;
+   			 -webkit-border-radius:      10px;
+ 		   border-radius:              10px;
+ 		   padding: 5px;
+}
 	
