@@ -9,11 +9,11 @@
 		<% case section.content_type when 'HTML' %>
 			<%= raw(sanitize(section.content, :tags => ['strong', 'em', 'a'])) %>
 		<% when 'text' %>
-			<p><%= section.content  %>
+			<p><%= section.content  %></p>
 		<% when 'avatar' %>
+		<p><%= section.content  %><br />
 		<%= image_tag section.avatar.url(:thumb) %>
 		</p>
-			
 		<% end %>
 					
 		</div>
