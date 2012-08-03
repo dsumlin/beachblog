@@ -17,7 +17,7 @@ table { border-collapse: collapse; }
 table tr th, table tr td { vertical-align: top; text-align: left; 
   padding: 3px; }
 a, a:visited { color: turquoise; }
-a:hover {}
+a:hover {color:pink}
 
 .clear { clear: both; }
 .center { text-align: center; }
@@ -39,7 +39,13 @@ a:hover {}
 #navigation ul li { margin-bottom: 0.5em; }
 #navigation ul ul { margin: 0.5em 0 0 1em; font-size: 0.9em; }
 #navigation a { text-decoration: none; padding: 1px 3px;}
-#navigation a:hover { background: green; }
+#navigation a:hover { background: black; text-decoration:underline;
+-moz-border-radius:         10px;
+-webkit-border-radius:      10px;
+border-radius:              10px;	
+padding: 5px;
+
+ }
 
 /* Content */
 #content h2 { color: black; }
@@ -65,12 +71,13 @@ a:hover {}
 	 }
 	 
 	 
- .menu ul {margin-left: 35px;list-style: none;}
+.menu ul {margin-left: 35px;list-style: none;}
 .menu ul li { margin-bottom: 1em; }
 .menu a {background-image: url(footer.jpg); color:white; 
 			-moz-border-radius:         10px;
    			 -webkit-border-radius:      10px;
  		   border-radius:              10px;
  		   padding: 5px;
+ 		   text-decoration:none;
 }
-	
+.menu a:hover {text-decoration:underline}	

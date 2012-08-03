@@ -12,7 +12,7 @@
 
 
 a { text-decoration: none; }
-a:hover { text-decoration: underline; color:blue}
+a:hover { text-decoration: underline; color:pink}
 /* large action buttons */
 a.action { float: right; padding: 2px 5px; margin: 0 0 1em 1em; 
   background: blue; color: white;  border: 1px solid white;
@@ -42,6 +42,7 @@ a.action:hover { background: black; }
     border-radius:              10px;
     background:black;
     padding:3px;
+    color:pink;
 
  }
 .form-buttons { text-align: center; margin: 1em 0; 

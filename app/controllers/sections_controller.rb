@@ -16,7 +16,7 @@ class SectionsController < ApplicationController
     end
 
     def show 
-      @section = Section.find(params[:id]).paginate(:section => params[:section], :per_page => 3)
+      @section = Section.find(params[:id]).paginate :page => params[:page], :per_page => 1
     end
 
     def new
