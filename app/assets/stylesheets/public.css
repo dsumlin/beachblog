@@ -25,7 +25,7 @@ a:hover {}
 /* Structure */
 #header { height: 4em; padding-top: 1em; text-align: center; color: white; background-image: url(bg6.jpg)}
 #header h1 { margin: 0; padding: 0; }
-#main { min-height: 500px; background: white; border:; background:url()}
+#main { max-height: 500px; background: white; border:;}
 #navigation { float: left; width: 140px; min-height: 480px; padding: 10px; 
   background: blue; color: white; background-image: url(bg7.jpg)}
 #navigation_2 { float: right; width: 140px; min-height: 480px; padding: 10px; 

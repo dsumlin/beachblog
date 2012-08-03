@@ -5,7 +5,7 @@
 
 
 /* Structure */
-#content { padding-left: 100px; padding-right: 100px; }
+#content { padding-left: 100px; padding-right: 100px;}
 #content h2 { width: 760px; text-align: center; }
 
 .login form { margin: 100px 250px; }
@@ -62,7 +62,7 @@ a.action:hover { background: black; }
 .even { background: none; }
 
 .section + .section { padding-top: 0.5em; margin-top: 0.5em; 
-  border-top: 1px dotted #666666; }
+  border-top: 1px dotted #666666;}
 span.status {display: block; width: 10px; height: 10px;
 	margin: 0.25em auto; padding: 0; border: 1px solid #000000; }
 span.status.true {background: green; color: green; }
