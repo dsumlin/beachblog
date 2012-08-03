@@ -14,7 +14,7 @@ gem 'slideshow'
  gem 'gallery-generator'
  gem 'aws-sdk'
  gem 'susy'
- 
+gem 'will_paginate'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
