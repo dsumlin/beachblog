@@ -3,6 +3,7 @@
 
 
 <h2><%= @page.name%></h2>
+	<%= will_paginate @sections %>
 <% @page.sections.visible.sorted.each do |section| %>
 	<div class="section">
 		<% case section.content_type when 'HTML' %>
@@ -16,5 +17,6 @@
 		<% end %>
 					
 		</div>
+
 <% end %>	
 		

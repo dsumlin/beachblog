@@ -12,6 +12,10 @@ class AccessController < ApplicationController
   def show
     @page = Page.where(:permalink => params[:id], :visible => true).first
       redirect_to(:action => 'index') unless @page
+      @sections = @page.sections.paginate(:page => params[:page], :per_page => 1)
+
+
+      
   end
   
   
